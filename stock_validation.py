@@ -36,10 +36,10 @@ if __name__ == "__main__":
     if stock_data is not None:
         validation_issues = validate_stock_data(stock_data, stock_symbol)
         if validation_issues:
-            print(f"⚠️ Issues found in {stock_symbol}:")
+            print(f" Issues found in {stock_symbol}:")
             for issue in validation_issues:
                 print(f"- {issue}")
         else:
-            print(f"✅ Data for {stock_symbol} is clean. No issues found.")
+            print(f"Data for {stock_symbol} is clean. No issues found.")
 
-        print(f"📁 Report saved: {stock_symbol}_validated.csv")
+        print(f"Report saved: {stock_symbol}_validated.csv")
